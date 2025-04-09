@@ -2,7 +2,7 @@ package dao;
 
 import entity.*;
 import exception.InvalidLoanException;
-import util.DBUtil;
+import util.DBConnUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class LoanRepositoryImpl implements ILoanRepository {
     private Connection connection;
 
     public LoanRepositoryImpl() {
-        this.connection = DBUtil.getDBConn();
+    	this.connection = DBConnUtil.getConnection("db.properties");
     }
 
     @Override
