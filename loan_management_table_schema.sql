@@ -30,7 +30,9 @@ INSERT INTO Customer (customerId, name, emailAddress, phoneNumber, address, cred
 INSERT INTO Loan (loanId, customerId, principalAmount, interestRate, loanTerm, loanType, loanStatus) VALUES
 (101, 1, 500000.00, 7.5, 60, 'Home Loan', 'Pending'),
 (102, 2, 300000.00, 8.2, 36, 'Car Loan', 'Pending'),
-(103, 3, 200000.00, 10.0, 24, 'Personal Loan', 'Pending'),
+(103, 3, 400000.00, 9.0, 48, 'Car Loan', 'Pending'),
 (104, 4, 750000.00, 6.5, 84, 'Home Loan', 'Pending'),
-(105, 5, 100000.00, 12.5, 12, 'Personal Loan', 'Pending');
+(105, 5, 600000.00, 7.8, 72, 'Home Loan', 'Pending');
+
+
 show tables;
